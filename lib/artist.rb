@@ -20,7 +20,7 @@ class Artist
 	def self.find_or_create_by_name(name)
 		artist = self.all.find{|a| a.name == name}
 		artist ||= self.new(name)
-		artist
+		# artist
 	end
 		
 	def save 
